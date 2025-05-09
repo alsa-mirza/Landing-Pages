@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img {
+    height: 550px;
+    position: relative;
+    z-index: 99;
+    width: 400px;
+}
+
+.scroll-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scroll-track-l {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll-l;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scroll-1 {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scroll-1::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-1 h1 {
+    margin-right: 30px;
+    letter-spacing: 4px;
+    font-family: "Anton", sans-serif;
+    display: inline-block;
+    font-size: 130px;
+    font-weight: 400;
+
+}
+
+.scroll-2 {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 100;
+}
+
+.scroll-2::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-2 h1 {
+    margin-right: 30px;
+    letter-spacing: 4px;
+    font-family: "Anton", sans-serif;
+    display: inline-block;
+    font-size: 130px;
+    color: transparent;
+    -webkit-text-stroke-color: rgb(99, 98, 98);
+    -webkit-text-stroke-width: 2px;
+    font-weight: 400;
+}
+
+.scroll-3 {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.scroll-3::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-3 h1 {
+    margin-right: 30px;
+    letter-spacing: 4px;
+    font-family: "Anton", sans-serif;
+    display: inline-block;
+    font-size: 130px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 37px;
+    font-weight: 200;
+    color: #afc0ca;
+    text-transform: uppercase;
+    position: absolute;
+    font-family: "Anton", sans-serif;
+    top: 6%;
+    text-align: center;
+    width: 60%;
+    z-index: 99;
+}
+
+.navbar {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar a {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 18px;
+    color: black;
+}
+
+.navbar a:hover {
+    color: #afc0ca;
+    font-weight: 600;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes scroll-l {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
