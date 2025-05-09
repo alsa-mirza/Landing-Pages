@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar h1 {
+    text-align: center;
+    font-family: "Winky Rough", sans-serif;
+    color: white;
+    padding: 18px;
+    font-size: 40px;
+
+}
+
+.logos {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos img {
+    height: 150px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.logos img:hover {
+    border: 7px solid rgb(252, 252, 5);
+    border-radius: 160px;
+}
+
+.turns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Special Gothic Condensed One", sans-serif;
+}
+
+.num {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Special Gothic Condensed One", sans-serif;
+}
+
+.boxes {
+    margin: 0 50px;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.player-choice {
+    text-align: center;
+    margin: 0 80px;
+    font-size: 45px;
+}
+
+.result {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Special Gothic Condensed One", sans-serif;
+}
+
+.result h3 {
+    display: inline;
+    font-size: 25px;
+    background-color: rgb(232, 231, 231);
+    padding: 15px;
+    border: 2px solid rgb(232, 231, 231);
+    border-radius: 33px;
+}
